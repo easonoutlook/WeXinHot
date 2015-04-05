@@ -3,7 +3,7 @@
 //  WeiXinHot
 //
 //  Created by Eason on 05/04/2015.
-//  Copyright (c) 2015 www.xyzs.com. All rights reserved.
+//  Copyright (c) 2015 www.kingbrites.com. All rights reserved.
 //
 
 #import "ViewController.h"
