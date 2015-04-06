@@ -21,11 +21,13 @@
 #import "SVProgressHUD.h"
 @import GoogleMobileAds;
 #import "STHTTPRequest.h"
+#import "JYSlideSegmentController.h"
 
 // data model
 #import "TTRestypeDataModel.h"
 #import "TTVideoDataModel.h"
 #import "TTResdetailDataModel.h"
+#import "TTHTTPRequest.h"
 
 //extend
 #import "TTViewUtils.h"

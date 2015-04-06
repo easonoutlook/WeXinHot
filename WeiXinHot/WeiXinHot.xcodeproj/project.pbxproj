@@ -128,6 +128,10 @@
 		9B7A99771AD1940D00E382B6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7A99761AD1940D00E382B6 /* QuartzCore.framework */; };
 		9B7A99791AD1941400E382B6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7A99781AD1941400E382B6 /* libz.dylib */; };
 		9B7A997B1AD1941E00E382B6 /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7A997A1AD1941E00E382B6 /* libobjc.A.dylib */; };
+		9B7A997E1AD239EA00E382B6 /* TTSegmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A997D1AD239EA00E382B6 /* TTSegmentController.m */; };
+		9B7A99851AD23A6D00E382B6 /* JYSlideSegmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A99841AD23A6D00E382B6 /* JYSlideSegmentController.m */; };
+		9B7A99881AD23B4600E382B6 /* TTContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A99871AD23B4600E382B6 /* TTContentViewController.m */; };
+		9B7A998C1AD23DAB00E382B6 /* TTHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A998B1AD23DAB00E382B6 /* TTHTTPRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -353,6 +357,14 @@
 		9B7A99761AD1940D00E382B6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9B7A99781AD1941400E382B6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		9B7A997A1AD1941E00E382B6 /* libobjc.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.A.dylib; path = usr/lib/libobjc.A.dylib; sourceTree = SDKROOT; };
+		9B7A997C1AD239EA00E382B6 /* TTSegmentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSegmentController.h; sourceTree = "<group>"; };
+		9B7A997D1AD239EA00E382B6 /* TTSegmentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTSegmentController.m; sourceTree = "<group>"; };
+		9B7A99831AD23A6D00E382B6 /* JYSlideSegmentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYSlideSegmentController.h; sourceTree = "<group>"; };
+		9B7A99841AD23A6D00E382B6 /* JYSlideSegmentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYSlideSegmentController.m; sourceTree = "<group>"; };
+		9B7A99861AD23B4600E382B6 /* TTContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTContentViewController.h; sourceTree = "<group>"; };
+		9B7A99871AD23B4600E382B6 /* TTContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTContentViewController.m; sourceTree = "<group>"; };
+		9B7A998A1AD23DAB00E382B6 /* TTHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTHTTPRequest.h; sourceTree = "<group>"; };
+		9B7A998B1AD23DAB00E382B6 /* TTHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTHTTPRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -506,6 +518,7 @@
 		9B7A98241AD1912F00E382B6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9B7A98331AD1912F00E382B6 /* Views */,
 				9B7A98251AD1912F00E382B6 /* TTAboutusViewController.h */,
 				9B7A98261AD1912F00E382B6 /* TTAboutusViewController.m */,
 				9B7A98271AD1912F00E382B6 /* TTApplicationListViewController.h */,
@@ -520,7 +533,10 @@
 				9B7A98301AD1912F00E382B6 /* TTResourceListViewController.m */,
 				9B7A98311AD1912F00E382B6 /* TTUCenterViewController.h */,
 				9B7A98321AD1912F00E382B6 /* TTUCenterViewController.m */,
-				9B7A98331AD1912F00E382B6 /* Views */,
+				9B7A997C1AD239EA00E382B6 /* TTSegmentController.h */,
+				9B7A997D1AD239EA00E382B6 /* TTSegmentController.m */,
+				9B7A99861AD23B4600E382B6 /* TTContentViewController.h */,
+				9B7A99871AD23B4600E382B6 /* TTContentViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -543,6 +559,7 @@
 		9B7A983C1AD1912F00E382B6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9B7A99891AD23D9A00E382B6 /* TTHTTPRequest */,
 				9B7A983D1AD1912F00E382B6 /* DataModel */,
 				9B7A98441AD1912F00E382B6 /* JSONModel */,
 			);
@@ -775,6 +792,7 @@
 		9B7A98A61AD1912F00E382B6 /* Thirdparts */ = {
 			isa = PBXGroup;
 			children = (
+				9B7A99821AD23A6D00E382B6 /* JYSlideSegmentController */,
 				9B7A98A71AD1912F00E382B6 /* EGOTableViewPullRefresh */,
 				9B7A98B51AD1912F00E382B6 /* STHTTPRequest */,
 				9B7A98B81AD1912F00E382B6 /* SVProgressHUD */,
@@ -1014,6 +1032,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9B7A99821AD23A6D00E382B6 /* JYSlideSegmentController */ = {
+			isa = PBXGroup;
+			children = (
+				9B7A99831AD23A6D00E382B6 /* JYSlideSegmentController.h */,
+				9B7A99841AD23A6D00E382B6 /* JYSlideSegmentController.m */,
+			);
+			path = JYSlideSegmentController;
+			sourceTree = "<group>";
+		};
+		9B7A99891AD23D9A00E382B6 /* TTHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				9B7A998A1AD23DAB00E382B6 /* TTHTTPRequest.h */,
+				9B7A998B1AD23DAB00E382B6 /* TTHTTPRequest.m */,
+			);
+			path = TTHTTPRequest;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1161,11 +1197,13 @@
 				9B7A99021AD1912F00E382B6 /* TTUCenterViewController.m in Sources */,
 				9B7A991D1AD1912F00E382B6 /* TTAbstractView.m in Sources */,
 				9B7A99151AD1912F00E382B6 /* TTAbstractTableViewCell.m in Sources */,
+				9B7A99851AD23A6D00E382B6 /* JYSlideSegmentController.m in Sources */,
 				9B7A992F1AD1912F00E382B6 /* UIImageView+HighlightedWebCache.m in Sources */,
 				9B7A991A1AD1912F00E382B6 /* TTNavigationController.m in Sources */,
 				9B7A99091AD1912F00E382B6 /* TTVideoDataModel.m in Sources */,
 				9B7A99111AD1912F00E382B6 /* JSONModel+networking.m in Sources */,
 				9B7A993D1AD1912F00E382B6 /* SVProgressHUD.m in Sources */,
+				9B7A99881AD23B4600E382B6 /* TTContentViewController.m in Sources */,
 				9B7A98FF1AD1912F00E382B6 /* TTMoreViewController.m in Sources */,
 				9B7A99271AD1912F00E382B6 /* SDWebImageDownloader.m in Sources */,
 				9B7A992B1AD1912F00E382B6 /* UIButton+WebCache.m in Sources */,
@@ -1188,8 +1226,10 @@
 				9B7A98FC1AD1912F00E382B6 /* TTAboutusViewController.m in Sources */,
 				9B7A97D71AD1764E00E382B6 /* AppDelegate.m in Sources */,
 				9B7A99311AD1912F00E382B6 /* UIView+WebCacheOperation.m in Sources */,
+				9B7A997E1AD239EA00E382B6 /* TTSegmentController.m in Sources */,
 				9B7A99241AD1912F00E382B6 /* SDImageCache.m in Sources */,
 				9B7A99291AD1912F00E382B6 /* SDWebImageManager.m in Sources */,
+				9B7A998C1AD23DAB00E382B6 /* TTHTTPRequest.m in Sources */,
 				9B7A99081AD1912F00E382B6 /* TTRestypeDataModel.m in Sources */,
 				9B7A992A1AD1912F00E382B6 /* SDWebImagePrefetcher.m in Sources */,
 				9B7A99031AD1912F00E382B6 /* TTApplistTableViewCell.m in Sources */,

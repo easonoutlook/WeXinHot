@@ -20,7 +20,7 @@
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
 {
     // Override point for customization after application launch.
-    [self testWeixinRequest];
+    [self requestSegmentData];
 
     return YES;
 }
@@ -50,6 +50,24 @@
 - (void)applicationWillTerminate:(UIApplication*)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)requestSegmentData
+{
+    TTDEBUGLOG(@"request segment data.");
+    STHTTPRequest* r = [TTHTTPRequest requestWithURLString:@"http://wx.html5.qq.com/api/gettablist?businessId=1"];
+
+    r.completionBlock = ^(NSDictionary* headers, NSString* body) {
+            // ...
+        TTDEBUGLOG(@"headers %@, body %@", headers, body);
+    };
+
+    r.errorBlock = ^(NSError* error) {
+            // ...
+        TTDEBUGLOG(@"error %@", error);
+    };
+
+    [r startAsynchronous];
 }
 
 - (void)testWeixinRequest
