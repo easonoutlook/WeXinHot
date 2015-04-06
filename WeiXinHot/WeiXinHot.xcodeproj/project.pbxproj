@@ -132,6 +132,7 @@
 		9B7A99851AD23A6D00E382B6 /* JYSlideSegmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A99841AD23A6D00E382B6 /* JYSlideSegmentController.m */; };
 		9B7A99881AD23B4600E382B6 /* TTContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A99871AD23B4600E382B6 /* TTContentViewController.m */; };
 		9B7A998C1AD23DAB00E382B6 /* TTHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A998B1AD23DAB00E382B6 /* TTHTTPRequest.m */; };
+		9BDDD3141AD2D90B009D165E /* TTSegmentsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDDD3131AD2D90B009D165E /* TTSegmentsModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -365,6 +366,8 @@
 		9B7A99871AD23B4600E382B6 /* TTContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTContentViewController.m; sourceTree = "<group>"; };
 		9B7A998A1AD23DAB00E382B6 /* TTHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTHTTPRequest.h; sourceTree = "<group>"; };
 		9B7A998B1AD23DAB00E382B6 /* TTHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTHTTPRequest.m; sourceTree = "<group>"; };
+		9BDDD3121AD2D90B009D165E /* TTSegmentsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSegmentsModel.h; sourceTree = "<group>"; };
+		9BDDD3131AD2D90B009D165E /* TTSegmentsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTSegmentsModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -575,6 +578,8 @@
 				9B7A98411AD1912F00E382B6 /* TTRestypeDataModel.m */,
 				9B7A98421AD1912F00E382B6 /* TTVideoDataModel.h */,
 				9B7A98431AD1912F00E382B6 /* TTVideoDataModel.m */,
+				9BDDD3121AD2D90B009D165E /* TTSegmentsModel.h */,
+				9BDDD3131AD2D90B009D165E /* TTSegmentsModel.m */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -1182,6 +1187,7 @@
 				9B7A990F1AD1912F00E382B6 /* JSONAPI.m in Sources */,
 				9B7A98F71AD1912F00E382B6 /* TTBaseTableViewController.m in Sources */,
 				9B7A97DA1AD1764E00E382B6 /* ViewController.m in Sources */,
+				9BDDD3141AD2D90B009D165E /* TTSegmentsModel.m in Sources */,
 				9B7A99121AD1912F00E382B6 /* JSONKeyMapper.m in Sources */,
 				9B7A98F91AD1912F00E382B6 /* TTBaseWebViewController.m in Sources */,
 				9B7A991E1AD1912F00E382B6 /* TTPlistFileManager.m in Sources */,

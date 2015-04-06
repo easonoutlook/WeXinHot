@@ -55,11 +55,18 @@
 - (void)requestSegmentData
 {
     TTDEBUGLOG(@"request segment data.");
-    STHTTPRequest* r = [TTHTTPRequest requestWithURLString:@"http://wx.html5.qq.com/api/gettablist?businessId=1"];
+    __block STHTTPRequest* r = [TTHTTPRequest requestWithURLString:kTTWeiXinHotSegmentListURL];
+
+    __weak STHTTPRequest* wr = r;
 
     r.completionBlock = ^(NSDictionary* headers, NSString* body) {
             // ...
         TTDEBUGLOG(@"headers %@, body %@", headers, body);
+
+        TTSegmentsModel *segmentModel = [[TTSegmentsModel alloc] initWithString:body error:nil];
+
+        TTDEBUGLOG(@"array %@", segmentModel.records);
+
     };
 
     r.errorBlock = ^(NSError* error) {

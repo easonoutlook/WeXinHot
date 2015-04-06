@@ -28,6 +28,7 @@
 #import "TTVideoDataModel.h"
 #import "TTResdetailDataModel.h"
 #import "TTHTTPRequest.h"
+#import "TTSegmentsModel.h"
 
 //extend
 #import "TTViewUtils.h"

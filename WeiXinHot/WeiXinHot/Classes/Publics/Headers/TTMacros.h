@@ -182,6 +182,8 @@
 #define kTTYouMiVideoAppID @"4ded05916ca62e44"
 #define kTTYouMiVideoAppSecret @"5c5bfcb611e24c86"
 
+#define kTTWeiXinHotSegmentListURL @"http://wx.html5.qq.com/api/gettablist?businessId=1"
+
 @interface TTMacros : NSObject
 
 @end
